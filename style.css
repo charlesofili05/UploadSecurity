@@ -405,9 +405,8 @@
       gap: 48px;
     }
     
-    .featureBox {
-      width: 100%; /* Make the width of .featureBox 100% */
-      max-width: 301px; /* Limit the maximum width to 301px */
+    .featureBox { /* Make the width of .featureBox 100% */
+      width: 301px; /* Limit the maximum width to 301px */
       min-height: 325px; /* Let the height adjust based on content */
       padding: 24px;
       background-color: black;
@@ -418,7 +417,7 @@
       z-index: 100;
     }
     
-    @media (min-width: 768px) {
+    @media (min-width: 1040px) {
       /* Apply styles for screens wider than 768px */
       #featureBoxCont {
         grid-template-columns: 1fr 1fr 1fr;
@@ -465,6 +464,12 @@
   }
   #benefits {
     background-color: #0d1a1a;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  #benefitsCont{
+    max-width: 1000px;
     position: relative;
     display: grid;
     place-items: center;
@@ -472,7 +477,6 @@
     min-height: 730px;
     z-index: 3;
   }
-  
   #benefitsLeft {
     position: relative;
   }
@@ -543,7 +547,7 @@
     z-index: 10;
   }
   @media (max-width: 850px) {
-      #benefits{
+      #benefitsCont{
           grid-template-columns: 1fr;
       }
       #benefitsLeft{
@@ -559,6 +563,12 @@
       }
   }
   #services {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  #servicesCont{
+    max-width: 1250px;
     min-height: 1040px;
     margin-top: 48px;
     padding: 48px 100px;
@@ -634,7 +644,7 @@
       }
   }
   @media (max-width: 620px) {
-      #services{
+      #servicesCont{
           padding: 48px 25px;
       }
       .serviceCard{
@@ -648,6 +658,7 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    align-items: center;
   }
   #testimonials h1 {
     font-family: Saira;
@@ -661,6 +672,7 @@
   #testimonialCardCont {
     display: flex;
     gap: 48px;
+    max-width: 1200px;
   }
   .testimonialCard {
     position: relative;
@@ -777,6 +789,7 @@
   }
   #footer {
     padding: 96px 100px 100px;
+    max-width: 1500px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
