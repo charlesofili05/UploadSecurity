@@ -340,7 +340,7 @@ opacity: 0px;
         display: flex;
         flex-direction: column;
         gap: 5px;
-        align-items: center;
+        align-items: start;
     }
   .heroBox:nth-of-type(1){
     align-items:right;
