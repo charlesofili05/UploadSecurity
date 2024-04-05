@@ -88,6 +88,10 @@
   }
   
   #navBar, #mobileNav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10000;
     padding: 0 50px;
     background-color: black;
     height: 100px;
@@ -215,7 +219,7 @@
   #heroCont{
     max-width: 1400px;
     display: flex;
-    height: 600px;
+    height: 850px;
     align-items: center;
     justify-content: center;
   }
@@ -382,7 +386,7 @@
      flex-direction: column;
      justify-content: center; 
      align-items: center;
-    background-color: #1c1d24;
+    z-index: 5000;
     padding: 48px 0 124px 0;
   }
   #featureTitle {
@@ -483,6 +487,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1.8fr;
+    gap: 75px;
     min-height: 730px;
     z-index: 3;
   }
@@ -807,9 +812,17 @@
       .contactCardFirstField{
           flex-wrap: wrap;
       }
+      .contactCardFirstField div{
+        width: 100%;
+      }
   }
   #footer {
     padding: 96px 100px 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  #footerCont{
     max-width: 1500px;
     display: flex;
     justify-content: space-between;
@@ -818,12 +831,12 @@
     z-index: 50;
   }
   @media (max-width: 1070px) {
-      #footer{
+      #footerCont{
           padding: 96px 30px 100px;
       }
   }
   @media (max-width: 900px){
-      #footer{
+      #footerCont{
           flex-wrap: wrap;
           gap: 20px;
       }
