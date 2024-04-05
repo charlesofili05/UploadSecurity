@@ -76,6 +76,14 @@ body{
 .whiteShadow {
   box-shadow: 5px 5px 0px 0px white;
 }
+.whiteBtn:hover, .blackBtn:hover{
+    position: relative;
+    box-shadow: none;
+    background: #E1E1E1;
+    top: 5px;
+    left: 5px;
+    color: #6d0176;
+}
 .greenText {
   color: #0cbc8b;
 }
@@ -118,6 +126,10 @@ body{
   gap: 24px;
   font-size: 16px;
   font-weight: 400;
+}
+
+#navLinks li:hover {
+    color: #6D0176;
 }
 .burger-menu {
     width: 30px;
