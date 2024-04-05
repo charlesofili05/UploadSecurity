@@ -357,6 +357,7 @@ opacity: 0px;
     }
     .heroBox:nth-of-type(1){
         min-width: 300px;
+      padding-left: 0px;
     }
     #heroTitle{
         font-size: 40px;
