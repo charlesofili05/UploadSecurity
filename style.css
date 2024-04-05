@@ -342,6 +342,8 @@ opacity: 0px;
         gap: 5px;
         align-items: center;
     }
+  .heroBox:nth-of-type(1){
+    align-items:right;
     #heroBtn{
         align-self: start;
     }
