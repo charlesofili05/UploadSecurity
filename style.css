@@ -344,7 +344,7 @@
       }
       .heroBox:nth-of-type(1){
         align-items: start;
-          padding-left: 0;
+        padding-left: 0;
       }
       .heroBox:nth-of-type(2){
           position: absolute;
@@ -467,6 +467,7 @@
     background-color: #0d1a1a;
     position: relative;
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1.8fr;
     min-height: 730px;
     z-index: 3;
@@ -670,14 +671,14 @@
   }
   .testimonialCard h3 {
     font-family: Saira;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 25.18px;
     text-align: left;
   }
   .testimonialCard p {
     font-family: Saira;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 18.89px;
     text-align: left;
@@ -975,7 +976,7 @@
       position: absolute;
       width: 516px;
       height: 516px;
-      top: 4533px;
+      top: 90%;
       left: -188px;   
   opacity: 0.2;
   background: #6D0176;
