@@ -84,6 +84,7 @@ body{
 }
 .greenText {
   color: #0cbc8b;
+  display: block;
 }
 
 #navBar, #mobileNav {
@@ -210,6 +211,7 @@ body{
   display: flex;
   height: 600px;
   background-color: #1c1d24;
+  padding-right: 100px;
 }
 .heroBox {
   width: 50%;
