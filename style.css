@@ -53,7 +53,7 @@
       position: relative;
       width: 100%;
       background-color: #0d1a1a;
-      overflow-x: hidden;
+      overflow: hidden;
       
   }
   .purpleShadow {
@@ -179,7 +179,7 @@
     }
     .no-scroll {
       overflow: hidden;
-      height: 670px;
+      height: 100vh;
       position: fixed;
     }
     .fixednav{
@@ -208,9 +208,14 @@
       }
   }
   #hero {
+    display: grid;
+    grid-template-columns: center;
+    place-items: center;
+  }
+  #heroCont{
+    max-width: 1400px;
     display: flex;
     height: 600px;
-    background-color: #1c1d24;
     align-items: center;
     justify-content: center;
   }
@@ -373,7 +378,10 @@
       }
   }
   #features {
-      
+     display: flex;
+     flex-direction: column;
+     justify-content: center; 
+     align-items: center;
     background-color: #1c1d24;
     padding: 48px 0 124px 0;
   }
@@ -397,6 +405,7 @@
     z-index: 3;
   }
   #featureBoxCont {
+    max-width: 1200px;
       margin-top: 40px;
       padding: 0px 100px;
       display: grid;
@@ -491,6 +500,12 @@
     font-weight: 700;
     line-height: 62.96px;
     text-align: left;
+  }
+  #benefitsLeft h1 .greenText{
+    display: inline;
+  }
+  #oneLine{
+    display: block;
   }
   #benefitsLeft img {
     position: relative;
@@ -687,10 +702,11 @@
     font-weight: 700;
     line-height: 25.18px;
     text-align: left;
+    margin-bottom: 15px;
   }
   .testimonialCard p {
     font-family: Saira;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 18.89px;
     text-align: left;
@@ -716,6 +732,11 @@
       #testimonialCardCont{
           flex-wrap: wrap;
       }
+  }
+  @media (min-width: 730px) {
+    .testimonialCard{
+        height: 300px;
+    }
   }
   #contact {
     padding: 48px 0;
@@ -904,9 +925,9 @@
     left: 55%;
     gap: 0px;
     opacity: 0.3;
-    background: #6d0176;
+      background: radial-gradient(rgb(109, 1, 118, 0.5), rgb(109, 1, 118, 0.4)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #6d0176;
+    box-shadow: 0 0 150px 150px rgb(109, 1, 118, 0.4);
   }
   #BC2 {
     position: absolute;
@@ -915,9 +936,9 @@
     top: 970px;
     left: -149px;
     opacity: 0.3;
-   background: #0CBC8B80;
+      background: linear-gradient(rgba(12, 188, 139, 0.3), rgba(12, 188, 139, 0.3)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #0CBC8B80;
+    box-shadow: 0 0 150px 150px rgba(12, 188, 139, 0.3);
     z-index: 2;
   }
   #BC4 {
@@ -926,12 +947,10 @@
   height: 516px;
   top: 2366px;
   left: 131px;
-  
   opacity: 0.3;
-  
-   background: #0CBC8B80;
+      background: linear-gradient(rgba(12, 188, 139, 0.3), rgba(12, 188, 139, 0.3)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #0CBC8B80;
+    box-shadow: 0 0 150px 150px rgba(12, 188, 139, 0.3);
     z-index: 5;
   }
   #BC7 {
@@ -940,10 +959,10 @@
     height: 516px;
     top: 3994px;
     left: 60%; 
-  opacity: 0.3;
-   background: #0CBC8B80;
+  opacity: 0.2;
+   background: linear-gradient(rgba(12, 188, 139, 0.3), rgba(12, 188, 139, 0.3)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #0CBC8B80;
+    box-shadow: 0 0 150px 150px rgba(12, 188, 139, 0.3);
     z-index: 5;
   }
   #BC3{
@@ -953,9 +972,9 @@
   top: 1249px;
   left: 55%;
   opacity: 0.2;
-  background: #6D0176;
+    background: radial-gradient(rgb(109, 1, 118, 0.5), rgb(109, 1, 118, 0.4)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #6D0176;
+    box-shadow: 0 0 150px 150px rgb(109, 1, 118, 0.4);
     z-index: 2;
   
   }
@@ -966,9 +985,9 @@
       top: 2038px;
       left: -40px; 
   opacity: 0.2;
-  background: #6D0176;
+    background: radial-gradient(rgb(109, 1, 118, 0.5), rgb(109, 1, 118, 0.4)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #6D0176;
+    box-shadow: 0 0 150px 150px rgb(109, 1, 118, 0.4);
     z-index: 4;
   
   }
@@ -979,9 +998,9 @@
       top: 3289px;
       left: 35%; 
   opacity: 0.2;
-  background: #6D0176;
+    background: radial-gradient(rgb(109, 1, 118, 0.5), rgb(109, 1, 118, 0.4)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #6D0176;
+    box-shadow: 0 0 150px 150px rgb(109, 1, 118, 0.4);
     z-index: 4;
   
   }
@@ -992,9 +1011,9 @@
       top: 90%;
       left: -188px;   
   opacity: 0.2;
-  background: #6D0176;
+  background: radial-gradient(rgb(109, 1, 118, 0.5), rgb(109, 1, 118, 0.4)) ;
     border-radius: 50%;
-    box-shadow: 0 0 150px 150px #6D0176;
+    box-shadow: 0 0 150px 150px rgb(109, 1, 118, 0.4);
     z-index: 4;
   
   }
@@ -1006,5 +1025,6 @@
   top: 612px;
   left: -192px;
   z-index: 3;
+
   }
   
