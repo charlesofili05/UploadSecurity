@@ -169,6 +169,7 @@ body{
   .no-scroll {
     overflow: hidden;
     height: 670px;
+    position: fixed;
   }
   .fixednav{
     position: fixed;
