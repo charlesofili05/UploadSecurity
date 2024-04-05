@@ -199,7 +199,7 @@
       padding: 50px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 20px;
       align-items: center;
       list-style: none;
     }
@@ -817,22 +817,23 @@
       }
   }
   #footer {
-    padding: 96px 100px 100px;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
   }
   #footerCont{
+    padding: 96px 100px 100px;
     max-width: 1500px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
+    gap: 50px;
     z-index: 50;
   }
   @media (max-width: 1070px) {
       #footerCont{
-          padding: 96px 30px 100px;
+          padding: 24px 30px 100px;
       }
   }
   @media (max-width: 900px){
