@@ -224,8 +224,6 @@ body{
 #heroTitle {
   position: relative;
   width: 453px;
-  height: 202px;
-  
   font-family: Saira;
   font-size: 64px;
   font-weight: 700;
@@ -235,8 +233,6 @@ body{
 #heroText {
   position: relative;
   width: 442px;
-  height: 62px;
-
   font-family: Saira;
   font-size: 20px;
   font-weight: 400;
@@ -245,7 +241,6 @@ body{
 }
 #heroBtn {
   position: relative;
-
   display: flex;
   gap: 24px;
 }
