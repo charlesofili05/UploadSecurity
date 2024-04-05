@@ -77,11 +77,9 @@ body{
   box-shadow: 5px 5px 0px 0px white;
 }
 .whiteBtn:hover, .blackBtn:hover{
-    position: relative;
     box-shadow: none;
     background: #E1E1E1;
-    top: 5px;
-    left: 5px;
+    transform: translate(5px, 5px);
     color: #6d0176;
 }
 .greenText {
@@ -219,6 +217,7 @@ body{
   flex-direction: column;
   justify-content: center;
   padding-left: 100px;
+  gap:12px;
 }
 
 #heroTitle {
@@ -243,6 +242,7 @@ body{
   position: relative;
   display: flex;
   gap: 24px;
+  margin-top: 24px;
 }
 #dataSecurity {
   position: relative;
