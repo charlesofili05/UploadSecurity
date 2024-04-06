@@ -217,11 +217,11 @@
     place-items: center;
   }
   #heroCont{
-    max-width: 1400px;
+    max-width: 1700px;
     display: flex;
     height: 850px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .heroBox {
     width: 50%;
@@ -231,7 +231,9 @@
     padding-left: 100px;
     gap:12px;
   }
-  
+  .heroBox:nth-of-type(1){
+    padding-left: 0;
+  }
   #heroTitle {
     position: relative;
     width: 480px;
@@ -329,6 +331,11 @@
   opacity: 0px;
   
   
+  }
+  @media (min-width: 1200px) {
+    #innerBox img{
+        scale: 1.2;
+    }
   }
   @media (max-width:1030px) {
       #dataSecurity{
@@ -738,11 +745,11 @@
           flex-wrap: wrap;
       }
   }
-  @media (min-width: 730px) {
+  /* @media (min-width: 730px) {
     .testimonialCard{
         height: 300px;
     }
-  }
+  } */
   #contact {
     padding: 48px 0;
     display: flex;
@@ -822,7 +829,7 @@
     place-items: center;
   }
   #footerCont{
-    padding: 96px 100px 100px;
+    padding: 24px 100px 100px;
     max-width: 1500px;
     display: flex;
     justify-content: space-between;
@@ -930,7 +937,9 @@
   #subBtn {
     box-shadow: 0px 5px 0px 0px #6d0176;
   }
-  
+  #subBtn:hover{
+    box-shadow: none;
+  }
   #BC1 {
     position: absolute;
     width: 516px;
