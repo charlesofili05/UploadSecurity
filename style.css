@@ -599,8 +599,8 @@
     min-height: 1040px;
     margin-top: 48px;
     padding: 48px 100px;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 24px;
   }
   .serviceCardContainer {
@@ -655,6 +655,24 @@
   }
   #SC4 {
     grid-column: 2 / span 3;
+  }
+  .readMoreBtn{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .readLessBtn{
+    text-decoration: underline;
+    cursor: pointer;
+    display: none;
+  }
+  .readMoreBtn.hide, .readLessBtn.hide{
+    display: none;
+  }
+  .moreText{
+    display: none;
+  }
+  .moreText.show, .readLessBtn.show{
+    display: inline;
   }
   #bgShield {
     position: absolute;
