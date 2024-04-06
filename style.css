@@ -808,6 +808,9 @@
     background-color: #2f3035;
     height: 91px;
   }
+  #contactBtn{
+    width: 100%;
+  }
   @media (max-width: 580px) {
       #contactCardinner{
           padding-left: 10px;
