@@ -9,3 +9,4 @@ if (mail($to, $subject, $message, $headers)) {
 } else {
     echo 'Failed to send email. Check your server configuration.';
 }
+?>
