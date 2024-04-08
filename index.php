@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  <div id="contactFormResponse" >
+      <div id="contactFormResponseCont" <?php if(isset($_GET["success"])|| isset($_GET["error"])){
+        $class = 'class = "show';
+        if(isset($_GET["success"])){
+          echo $class.' greenResponse"';
+        }else if(isset($_GET["error"])||$_GET["error"] == 1 || $_GET["error"] == 2){
+          echo $class.' redResponse"';
+        }
+      
+    }
+      
+      ?>>
+        <p>
+        <?php
+        if (isset($_GET["success"]) && $_GET["success"] == 1) {
+          echo "The message was sent successfully we will get back to you soon.";
+        }else if (isset($_GET["error"]) && $_GET["error"] == 1) {
+          echo "Fill all the fields of the form to submit.";
+        }else if (isset($_GET["error"]) && $_GET["error"] == 2) {
+          echo "Error submitting form, Try again.";
+        }
+        ?>
+      </p>
+      <a href="./index.php" id="removeResponse">X</a>
+      </div>
+      
+    </div>
     <div id="mobileNavLinkPage">
         <ul id="mobileNavLinks">
             <li><a href="#">Features</a></li>
@@ -297,7 +324,7 @@
     </section>
     <section id="contact">
       <div id="contactCard">
-        <div id="contactCardinner">
+        <form action="./contact.php" method="post" id="contactCardinner">
           <h2>Contact Us</h2>
           <div class="contactCardFirstField">
             <div>
@@ -324,9 +351,9 @@
             ></textarea>
           </div>
           <div class="contactCardField">
-            <button class="whiteBtn purpleShadow">Get in Touch</button>
+            <button type="submit" class="whiteBtn purpleShadow">Get in Touch</button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
     <section id="footer">
