@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $headers .= "X-Mailer: PHP/" . phpversion();
         
                 // Send the email
-                $sendTo = 'charlesofili622@gmail.com'; // Change this to the recipient's email address
+                $sendTo = 'sean.lagan@uploadsecurity.com'; // Change this to the recipient's email address
                 $subject = 'New message from contact form';
     
         
