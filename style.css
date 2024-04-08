@@ -86,7 +86,53 @@
     color: #0cbc8b;
     display: block;
   }
-  
+  #contactFormResponse{
+    position: fixed;
+    display: flex;
+    z-index: 30000;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  #contactFormResponseCont{
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    border-radius: 5px;
+    transform: translateY(-150%);
+    
+  }
+  .greenResponse{
+    color: darkgreen;
+    background-color: lightgreen;
+    border: 3px solid darkgreen;
+  }
+  .redResponse{
+    color: red;
+    background-color: pink;
+    border: 3px solid red;
+  }
+  .greenResponse p{
+    color: darkgreen;
+  }
+  .redResponse p{
+    color: red;
+  }
+  #contactFormResponseCont.show{
+    animation-name: dropDown ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes dropDown {
+    0%{
+      transform: translateY(-150%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
   #navBar, #mobileNav {
     position: fixed;
     left: 0;
